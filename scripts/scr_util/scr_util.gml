@@ -17,7 +17,7 @@ function string_split(str, delimiter) {
 	var res = [];
 	var pos = string_pos(delimiter, str);
 	while (pos != 0) {
-		array_push(res, string_copy(str, 1, pos - 1));
+		array_push(res, string_copy(str, 1, pos - 2));
 		str = string_delete(str, 1, pos);
 		pos = string_pos(delimiter, str);
 	}
@@ -38,4 +38,13 @@ function map(array, func) {
 	for (var i = 0; i < length; i++)
 		array[i] = func(array[i]);
 	return array;
+}
+
+function bin_to_dec(bin) {
+	var dec = 0;
+	var digits = string_length(bin);
+	for (var i = 0; i < digits; i++) {
+		dec |= real(string_char_at(bin, digits - i)) << i;
+	}
+	return dec;
 }

@@ -8,6 +8,7 @@
     {"id":{"name":"day_2","path":"scripts/day_2/day_2.yy",},"order":1,},
     {"id":{"name":"spr_submarine","path":"sprites/spr_submarine/spr_submarine.yy",},"order":0,},
     {"id":{"name":"spr_chest","path":"sprites/spr_chest/spr_chest.yy",},"order":1,},
+    {"id":{"name":"day_3","path":"scripts/day_3/day_3.yy",},"order":2,},
     {"id":{"name":"rm_advent","path":"rooms/rm_advent/rm_advent.yy",},"order":0,},
   ],
   "Options": [
@@ -54,6 +55,8 @@
   "IncludedFiles": [
     {"CopyToMask":-1,"filePath":"datafiles/Input/Day_1","resourceVersion":"1.0","name":"day_1.txt","resourceType":"GMIncludedFile",},
     {"CopyToMask":-1,"filePath":"datafiles/Input/Day_2","resourceVersion":"1.0","name":"day_2.txt","resourceType":"GMIncludedFile",},
+    {"CopyToMask":-1,"filePath":"datafiles/Input/Day_3","resourceVersion":"1.0","name":"day_3.txt","resourceType":"GMIncludedFile",},
+    {"CopyToMask":-1,"filePath":"datafiles/Input/Day_3","resourceVersion":"1.0","name":"day_3_example.txt","resourceType":"GMIncludedFile",},
   ],
   "MetaData": {
     "IDEVersion": "2.3.6.595",
