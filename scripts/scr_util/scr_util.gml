@@ -10,7 +10,7 @@ function get_input_as_lines(filename) {
 }
 
 function get_input_as_real_lines(filename) {
-	return array_to_reals(string_split(get_input(filename), "\n"));
+	return array_to_reals(get_input_as_lines(filename));
 }
 
 function string_split(str, delimiter) {
@@ -30,5 +30,12 @@ function array_to_reals(array) {
 	var length = array_length(array);
 	for (var i = 0; i < length; i++)
 		array[i] = real(array[i]);
+	return array;
+}
+
+function map(array, func) {
+	var length = array_length(array);
+	for (var i = 0; i < length; i++)
+		array[i] = func(array[i]);
 	return array;
 }
