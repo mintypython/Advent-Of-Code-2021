@@ -20,7 +20,7 @@ function string_split(str, delimiter) {
 		var substr = string_copy(str, 1, pos - 1);
 		if (string_length(substr) > 0)
 			array_push(res, substr);
-		str = string_delete(str, 1, pos);
+		str = string_delete(str, 1, pos + string_length(delimiter) - 1);
 		pos = string_pos(delimiter, str);
 	}
 	if (string_length(str) > 0)
@@ -29,13 +29,10 @@ function string_split(str, delimiter) {
 }
 
 function array_to_reals(array) {
-	var length = array_length(array);
-	for (var i = 0; i < length; i++)
-		array[i] = real(array[i]);
-	return array;
+	return array_map(array, function(value) { return real(value); });
 }
 
-function map(array, func) {
+function array_map(array, func) {
 	var length = array_length(array);
 	for (var i = 0; i < length; i++)
 		array[i] = func(array[i]);

@@ -4,6 +4,7 @@
     {"id":{"name":"cont_runner","path":"objects/cont_runner/cont_runner.yy",},"order":0,},
     {"id":{"name":"day_1","path":"scripts/day_1/day_1.yy",},"order":0,},
     {"id":{"name":"obj_visualizer","path":"objects/obj_visualizer/obj_visualizer.yy",},"order":0,},
+    {"id":{"name":"day_5","path":"scripts/day_5/day_5.yy",},"order":4,},
     {"id":{"name":"visualizer_day_2_part_1","path":"objects/visualizer_day_2_part_1/visualizer_day_2_part_1.yy",},"order":1,},
     {"id":{"name":"scr_util","path":"scripts/scr_util/scr_util.yy",},"order":2,},
     {"id":{"name":"day_2","path":"scripts/day_2/day_2.yy",},"order":1,},
@@ -60,6 +61,8 @@
     {"CopyToMask":-1,"filePath":"datafiles/Input/Day_3","resourceVersion":"1.0","name":"day_3_example.txt","resourceType":"GMIncludedFile",},
     {"CopyToMask":-1,"filePath":"datafiles/Input/Day_4","resourceVersion":"1.0","name":"input.txt","resourceType":"GMIncludedFile",},
     {"CopyToMask":-1,"filePath":"datafiles/Input/Day_4","resourceVersion":"1.0","name":"example.txt","resourceType":"GMIncludedFile",},
+    {"CopyToMask":-1,"filePath":"datafiles/Input/Day_5","resourceVersion":"1.0","name":"input.txt","resourceType":"GMIncludedFile",},
+    {"CopyToMask":-1,"filePath":"datafiles/Input/Day_5","resourceVersion":"1.0","name":"example.txt","resourceType":"GMIncludedFile",},
   ],
   "MetaData": {
     "IDEVersion": "2.3.5.589",
