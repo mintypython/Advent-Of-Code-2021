@@ -2,7 +2,7 @@ function get_input(filename) {
 	var buff = buffer_load("Input/"+filename);
 	var input = buffer_read(buff, buffer_text);
 	buffer_delete(buff);
-	return input;
+	return string_replace_all(input, "\r", "");
 }
 
 function get_input_as_lines(filename) {
@@ -17,7 +17,9 @@ function string_split(str, delimiter) {
 	var res = [];
 	var pos = string_pos(delimiter, str);
 	while (pos != 0) {
-		array_push(res, string_copy(str, 1, pos - 2));
+		var substr = string_copy(str, 1, pos - 1);
+		if (string_length(substr) > 0)
+			array_push(res, substr);
 		str = string_delete(str, 1, pos);
 		pos = string_pos(delimiter, str);
 	}
