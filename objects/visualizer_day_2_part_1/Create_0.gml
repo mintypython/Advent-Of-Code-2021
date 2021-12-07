@@ -1,5 +1,5 @@
 input = get_input_as_lines("Day_2/day_2.txt");
-input = map(input, function(line) {
+input = array_map(input, function(line) {
 	line = string_split(line, " ");
 	line[1] = real(line[1]);
 	return line;

@@ -1,6 +1,6 @@
 function day_2_part_1() {
 	var input = get_input_as_lines("Day_2/day_2.txt");
-	input = map(input, function(line) {
+	input = array_map(input, function(line) {
 		line = string_split(line, " ");
 		line[1] = real(line[1]);
 		return line;
@@ -23,7 +23,7 @@ function day_2_part_1() {
 
 function day_2_part_2() {
 	var input = get_input_as_lines("Day_2/day_2.txt");
-	input = map(input, function(line) {
+	input = array_map(input, function(line) {
 		line = string_split(line, " ");
 		line[1] = real(line[1]);
 		return line;

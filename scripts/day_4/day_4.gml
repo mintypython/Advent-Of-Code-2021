@@ -53,7 +53,7 @@ function day_4_part_2() {
 function Day4Board(_set) constructor {
 	set = [];
 	for (var i = 0; i < array_length(_set); i++) {
-		array_push(set, map(string_split(_set[i], " "), function(_value) { return { marked: false, value: _value}; }));
+		array_push(set, array_map(string_split(_set[i], " "), function(_value) { return { marked: false, value: _value}; }));
 	}
 	
 	mark = function(_num) {
