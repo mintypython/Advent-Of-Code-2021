@@ -1,4 +1,4 @@
-function day_6_part_2() {
+function day_6_part_1() {
 	static days = 80;
 	var fish = array_to_reals(string_split(get_input("Day_6/input.txt"), ","));
 	
