@@ -1,6 +1,7 @@
 {
   "resources": [
     {"id":{"name":"day_9","path":"scripts/day_9/day_9.yy",},"order":8,},
+    {"id":{"name":"day_11","path":"scripts/day_11/day_11.yy",},"order":10,},
     {"id":{"name":"day_10","path":"scripts/day_10/day_10.yy",},"order":9,},
     {"id":{"name":"day_4","path":"scripts/day_4/day_4.yy",},"order":3,},
     {"id":{"name":"cont_runner","path":"objects/cont_runner/cont_runner.yy",},"order":0,},
@@ -78,6 +79,8 @@
     {"CopyToMask":-1,"filePath":"datafiles/Input/Day_9","resourceVersion":"1.0","name":"input.txt","resourceType":"GMIncludedFile",},
     {"CopyToMask":-1,"filePath":"datafiles/Input/Day_10","resourceVersion":"1.0","name":"example.txt","resourceType":"GMIncludedFile",},
     {"CopyToMask":-1,"filePath":"datafiles/Input/Day_10","resourceVersion":"1.0","name":"input.txt","resourceType":"GMIncludedFile",},
+    {"CopyToMask":-1,"filePath":"datafiles/Input/Day_11","resourceVersion":"1.0","name":"example.txt","resourceType":"GMIncludedFile",},
+    {"CopyToMask":-1,"filePath":"datafiles/Input/Day_11","resourceVersion":"1.0","name":"input.txt","resourceType":"GMIncludedFile",},
   ],
   "MetaData": {
     "IDEVersion": "2.3.6.595",
