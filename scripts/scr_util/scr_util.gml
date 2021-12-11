@@ -13,18 +13,24 @@ function get_input_as_real_lines(filename) {
 	return array_to_reals(get_input_as_lines(filename));
 }
 
-function string_split(str, delimiter) {
+function string_split(str, delimiter = "") {
 	var res = [];
-	var pos = string_pos(delimiter, str);
-	while (pos != 0) {
-		var substr = string_copy(str, 1, pos - 1);
-		if (string_length(substr) > 0)
-			array_push(res, substr);
-		str = string_delete(str, 1, pos + string_length(delimiter) - 1);
-		pos = string_pos(delimiter, str);
+	if (string_length(delimiter) > 0) {
+		var pos = string_pos(delimiter, str);
+		while (pos != 0) {
+			var substr = string_copy(str, 1, pos - 1);
+			if (string_length(substr) > 0)
+				array_push(res, substr);
+			str = string_delete(str, 1, pos + string_length(delimiter) - 1);
+			pos = string_pos(delimiter, str);
+		}
+		if (string_length(str) > 0)
+			array_push(res, str);
 	}
-	if (string_length(str) > 0)
-		array_push(res, str);
+	else {
+		for (var i = 1; i <= string_length(str); i++)
+			array_push(res, string_char_at(str, i));
+	}
 	return res;
 }
 
